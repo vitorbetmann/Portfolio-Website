@@ -171,3 +171,8 @@ iframe {
 #skillsTable {
   text-align: left;
 }
+
+td hr {
+  display: flex;
+  margin: auto;
+}

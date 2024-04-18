@@ -263,9 +263,9 @@
         </table>
       </div>
 
-      <div>
-        <br />
+      <div class="projects">
         <div>
+          <br />
           <form name="form1" id="form1" action="/action_page.php">
             Filter by
             <select name="subject" id="subject" onchange="show(this.value)">
@@ -275,181 +275,178 @@
             </select>
           </form>
         </div>
-        <div class="projects">
-          <div class="robotics">
-            <table>
-              <tr>
-                <td colspan="2">
-                  <h2>MatchaBot (C++/Arduino)</h2>
-                  <h3>Sumo Fighting Robot</h3>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <span class="video">
-                    <iframe
-                      src="https://www.youtube.com/embed/BBuaSTkzxIo?si=c1giAAfNKjiKvbtu"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
-                  </span>
-                </td>
-              </tr>
-              <tr class="story">
-                <td>
+        <div class="robotics">
+          <table>
+            <tr>
+              <td colspan="2">
+                <h2>MatchaBot (C++/Arduino)</h2>
+                <h3>Sumo Fighting Robot</h3>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="video">
+                  <iframe
+                    src="https://www.youtube.com/embed/BBuaSTkzxIo?si=c1giAAfNKjiKvbtu"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </span>
+              </td>
+            </tr>
+            <tr class="story">
+              <td>
+                <ul>
+                  <li>
+                    In March 2024, my teammate modeled and I coded the robot
+                    that got
+                    <strong>1ST PLACE, by winning 15 out of 16 matches</strong>,
+                    at the annual York University Mini Robot Sumo Competition.
+                  </li>
+                  <br />
+                  <li>
+                    For this new version, we developed a strategy that evaded
+                    the opponent and attacked it from the side, ensuring victory
+                    100% of the times we enabled it.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <span>
+                  <a
+                    href="https://github.com/vitorbetmann/Arduino-TicTacToe"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    ><button>Repository</button></a
+                  >
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><hr /></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="robotics" class="menu">
+          <table>
+            <tr>
+              <td colspan="2">
+                <h2>EspressoBot (C++/Arduino)</h2>
+                <h3>Sumo Fighting Robot</h3>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="video">
+                  <iframe
+                    width="448"
+                    height="252"
+                    src="https://www.youtube.com/embed/dHQ6fCmV7Aw?si=VTiVoWHn6Rq0ToLU"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </span>
+              </td>
+            </tr>
+            <tr class="story">
+              <td>
+                <ul>
+                  <li>
+                    In January 2024, I modeled, assembled, and coded the robot
+                    that
+                    <strong>won 1ST PLACE out of 32 teams</strong> at the annual
+                    McMaster University Mini Robot Sumo Competition.
+                  </li>
+                  <br />
+                  <li>
+                    The robot had an ultrasonic sensor to find the opponent and
+                    a pair of infrared sensors to react when too close to the
+                    arena's edge.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <span>
+                  <a
+                    href="https://github.com/vitorbetmann/Arduino-TicTacToe"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    ><button>Repository</button></a
+                  >
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><hr /></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="games" class="menu">
+          <table>
+            <tr>
+              <td colspan="2">
+                <h2>TIC-TAC-TOE (C++/Arduino)</h2>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="video">
+                  <iframe
+                    width="448"
+                    height="252"
+                    src="https://www.youtube.com/embed/BBuaSTkzxIo?si=c1giAAfNKjiKvbtu"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </span>
+              </td>
+            </tr>
+            <tr class="story">
+              <td>
+                <span>
                   <ul>
                     <li>
-                      In March 2024, my teammate modeled and I coded the robot
-                      that got
-                      <strong>1ST PLACE, by winning 15 out of 16 matches</strong
-                      >, at the annual York University Mini Robot Sumo
-                      Competition.
+                      A game of Tic-Tac-Toe in which the player uses a standard
+                      IR control to make the plays against an
+                      <strong>AI opponent</strong>. It uses a 128x128p LCD
+                      display to show the board and another 16x2 LCD display to
+                      communicate with the player (ask for input, show the
+                      score...).
                     </li>
                     <br />
                     <li>
-                      For this new version, we developed a strategy that evaded
-                      the opponent and attacked it from the side, ensuring
-                      victory 100% of the times we enabled it.
+                      To resemble the experience of playing with a videogame
+                      controller, I mapped the 'forward,' 'rewind,' 'volume+,'
+                      and 'volume-' keys to behave like directional buttons,
+                      with the 'play/pause' button being used to confirm the
+                      play.
                     </li>
                   </ul>
-                </td>
-                <td>
-                  <span>
-                    <a
-                      href="https://github.com/vitorbetmann/Arduino-TicTacToe"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      ><button>Repository</button></a
-                    >
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2"><hr /></td>
-              </tr>
-            </table>
-          </div>
-
-          <div class="robotics" class="menu">
-            <table>
-              <tr>
-                <td colspan="2">
-                  <h2>EspressoBot (C++/Arduino)</h2>
-                  <h3>Sumo Fighting Robot</h3>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <span class="video">
-                    <iframe
-                      width="448"
-                      height="252"
-                      src="https://www.youtube.com/embed/dHQ6fCmV7Aw?si=VTiVoWHn6Rq0ToLU"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
-                  </span>
-                </td>
-              </tr>
-              <tr class="story">
-                <td>
-                  <ul>
-                    <li>
-                      In January 2024, I modeled, assembled, and coded the robot
-                      that
-                      <strong>won 1ST PLACE out of 32 teams</strong> at the
-                      annual McMaster University Mini Robot Sumo Competition.
-                    </li>
-                    <br />
-                    <li>
-                      The robot had an ultrasonic sensor to find the opponent
-                      and a pair of infrared sensors to react when too close to
-                      the arena's edge.
-                    </li>
-                  </ul>
-                </td>
-                <td>
-                  <span>
-                    <a
-                      href="https://github.com/vitorbetmann/Arduino-TicTacToe"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      ><button>Repository</button></a
-                    >
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2"><hr /></td>
-              </tr>
-            </table>
-          </div>
-
-          <div class="games" class="menu">
-            <table>
-              <tr>
-                <td colspan="2">
-                  <h2>TIC-TAC-TOE (C++/Arduino)</h2>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <span class="video">
-                    <iframe
-                      width="448"
-                      height="252"
-                      src="https://www.youtube.com/embed/BBuaSTkzxIo?si=c1giAAfNKjiKvbtu"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
-                  </span>
-                </td>
-              </tr>
-              <tr class="story">
-                <td>
-                  <span>
-                    <ul>
-                      <li>
-                        A game of Tic-Tac-Toe in which the player uses a
-                        standard IR control to make the plays against an
-                        <strong>AI opponent</strong>. It uses a 128x128p LCD
-                        display to show the board and another 16x2 LCD display
-                        to communicate with the player (ask for input, show the
-                        score...).
-                      </li>
-                      <br />
-                      <li>
-                        To resemble the experience of playing with a videogame
-                        controller, I mapped the 'forward,' 'rewind,' 'volume+,'
-                        and 'volume-' keys to behave like directional buttons,
-                        with the 'play/pause' button being used to confirm the
-                        play.
-                      </li>
-                    </ul>
-                  </span>
-                </td>
-                <td>
-                  <span>
-                    <a
-                      href="https://github.com/vitorbetmann/Arduino-TicTacToe"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      ><button>Repository</button></a
-                    >
-                  </span>
-                </td>
-              </tr>
-            </table>
-          </div>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <a
+                    href="https://github.com/vitorbetmann/Arduino-TicTacToe"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    ><button>Repository</button></a
+                  >
+                </span>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
