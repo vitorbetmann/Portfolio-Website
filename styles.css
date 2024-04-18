@@ -1,5 +1,5 @@
 header,
-#main,
+.main,
 #buttonDiv,
 footer,
 #myPicture,
@@ -8,14 +8,14 @@ button {
 }
 
 body,
-#main,
+.main,
 #paragraph,
 #buttonDiv {
   background-color: lightcyan;
 }
 
-#resume,
-#projects {
+.resume,
+.projects {
   display: none;
 }
 
@@ -69,7 +69,7 @@ header {
   top: 0;
 }
 
-#main {
+.main {
   margin-top: 100px;
   width: 50%;
   margin-left: 25%;
@@ -79,7 +79,7 @@ header {
   font-size: 25px;
 }
 
-#main span {
+.main span {
   margin: auto;
   padding: 5%;
   text-align: justify;
@@ -145,23 +145,23 @@ iframe {
   margin: auto;
 }
 
-#resume {
+.resume {
   text-align: justify;
 }
 
-#resume table {
+.resume table {
   margin: auto;
   max-width: 70%;
 }
 
-#resume .topCol{
-  border-collapse:collapse;
+.resume .topCol {
+  border-collapse: collapse;
 
   border-top: black solid 1px;
 }
 
 #downloadResumeB {
-  margin-top: 30px;
+  margin: 25px;
   width: 400px;
   display: inline-flex;
   justify-content: center;

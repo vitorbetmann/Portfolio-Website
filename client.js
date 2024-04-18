@@ -1,17 +1,28 @@
-function display(id) {
-    document.getElementById("about").style.display = "none";
-    document.getElementById("resume").style.display = "none";
-    document.getElementById("projects").style.display = "none";
+function display(className) {
+  document.getElementsByClassName("about")[0].style.display = "none";
+  document.getElementsByClassName("resume")[0].style.display = "none";
+  document.getElementsByClassName("projects")[0].style.display = "none";
 
-  switch (id) {
+  switch (className) {
     case "aboutB":
-        document.getElementById("about").style.display = "contents";
+      document.getElementsByClassName("about")[0].style.display = "contents";
       break;
     case "resumeB":
-        document.getElementById("resume").style.display = "contents";
+      document.getElementsByClassName("resume")[0].style.display = "contents";
       break;
     case "projectsB":
-        document.getElementById("projects").style.display = "contents";
+      document.getElementsByClassName("projects")[0].style.display = "contents";
       break;
+  }
+}
+
+function show(value) {
+  var obj = document.getElementsByClassName("projects")[0].children;
+  for (var i = 0; i < obj.length; i++) {
+    if (obj[i].className == value) {
+      obj[i].style.display = "contents";
+    } else {
+      obj[i].style.display = "none";
+    }
   }
 }
