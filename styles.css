@@ -159,8 +159,6 @@ iframe {
   border-top: black solid 1px;
 }
 
-
-
 #downloadResumeB {
   margin: 25px;
   width: 400px;
@@ -172,9 +170,4 @@ iframe {
 #skillsTable {
   text-align: left;
   max-width: 100%;
-}
-
-td hr {
-  display: inline;
-  margin: auto;
 }
