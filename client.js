@@ -1,9 +1,16 @@
-function display(className) {
+function display(id) {
+  var divObj = document.getElementById("buttonDiv").children;
+  for (var i = 0; i < divObj.length; i++) {
+    divObj[i].style.backgroundColor = "#c3c2c3";
+    divObj[i].style.color = "black";
+
+  }
+
   document.getElementsByClassName("about")[0].style.display = "none";
   document.getElementsByClassName("resume")[0].style.display = "none";
   document.getElementsByClassName("projects")[0].style.display = "none";
 
-  switch (className) {
+  switch (id) {
     case "aboutB":
       document.getElementsByClassName("about")[0].style.display = "contents";
       break;
@@ -14,6 +21,10 @@ function display(className) {
       document.getElementsByClassName("projects")[0].style.display = "contents";
       break;
   }
+
+  var buttonObj = document.getElementById(id).style;
+  buttonObj.backgroundColor = "#868686";
+  buttonObj.color = "white";
 }
 
 function show(value) {
