@@ -1,7 +1,7 @@
+/* general */
 header,
 .main,
 #buttonDiv,
-footer,
 #myPicture,
 button,
 #buttonDiv {
@@ -10,23 +10,28 @@ button,
 
 body,
 .main,
+footer,
 #paragraph {
-  background-color: #ffffff;
+  background-color: white;
   font-size: large;
 }
 
+/* Starting configs */
 .resume,
 .projects {
   display: none;
 }
 
-nav > a {
-  margin: 5px;
-}
-
 #aboutB {
   background-color: #868686;
   color: white;
+}
+
+/* Interactions */
+/* About tab */
+/* Resume tab */
+nav > a {
+  margin: 5px;
 }
 
 body,
@@ -66,10 +71,6 @@ footer {
 
 header {
   position: fixed;
-}
-
-footer {
-  bottom: 0;
 }
 
 header {
@@ -130,18 +131,10 @@ button:hover {
   width: 50px;
 }
 
-iframe {
-  border: #c3c2c3 solid 2px;
-  width: 720px;
-  height: 404px;
-}
 
 .story td {
   text-align: justify;
-  width: 100%;
   margin: auto;
-  padding-top: 3%;
-  padding-left: 11%;
 }
 
 #myDescription {
@@ -149,13 +142,14 @@ iframe {
   margin: auto;
 }
 
+/* Resume tab */
 .resume {
   text-align: justify;
 }
 
 .resume table {
   margin: auto;
-  max-width: 70%;
+  max-width: 75%;
 }
 
 .resume .topCol {
@@ -174,4 +168,27 @@ iframe {
 #skillsTable {
   text-align: left;
   max-width: 100%;
+}
+
+/* Projects tab */
+.projects div {
+  display: flexbox;
+  text-align: justify;
+  justify-content: center;
+  margin: auto;
+}
+
+.title {
+  justify-content: center;
+  text-align: center;
+}
+
+iframe, .projects table {
+  margin: auto;
+  width: 40vw;
+}
+
+iframe {
+  border: #c3c2c3 solid 2px;
+  aspect-ratio: 16 / 9;
 }

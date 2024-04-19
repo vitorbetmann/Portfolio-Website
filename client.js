@@ -29,7 +29,7 @@ function display(id) {
 
 function show(value) {
   var obj = document.getElementsByClassName("projects")[0].children;
-  for (var i = 1; i < obj.length; i++) {
+  for (var i = 2; i < obj.length; i++) {
     if (obj[i].className == value || value == "featured") {
       obj[i].style.display = "contents";
     } else {
