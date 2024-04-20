@@ -101,10 +101,9 @@ button {
 }
 
 button:hover {
-  color: white!important;
+  color: white !important;
   cursor: pointer;
-  background-color: #868686!important;
-
+  background-color: #868686 !important;
 }
 
 #reference {
@@ -167,12 +166,21 @@ iframe {
   #myName,
   #socialsTop,
   #createdBy,
-  .projects button p {
+  .projects button p,
+  form {
     display: none;
   }
 
-  #main {
-    margin-top: 0vh;
+  main, #myPicture {
+    margin-top: 5vh;
+  }
+
+  main {
+    margin-bottom: 5vh;
+
+  }
+
+  .main {
     width: 100vw;
     margin-left: 0;
   }
@@ -205,10 +213,6 @@ iframe {
     margin: 0;
     font-size: 3vw;
     justify-items: center;
-  }
-
-  .main {
-    margin-top: 3vh;
   }
 
   .projects button {
