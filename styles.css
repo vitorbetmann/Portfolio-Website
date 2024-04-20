@@ -163,7 +163,7 @@ iframe {
 }
 
 /* Phone */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1300px) {
   #myName,
   #socialsTop,
   #createdBy,
