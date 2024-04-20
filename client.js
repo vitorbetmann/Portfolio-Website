@@ -8,6 +8,7 @@ function display(id) {
   document.getElementsByClassName("about")[0].style.display = "none";
   document.getElementsByClassName("resume")[0].style.display = "none";
   document.getElementsByClassName("projects")[0].style.display = "none";
+  document.getElementsByClassName("contact")[0].style.display = "none";
 
   switch (id) {
     case "aboutB":
@@ -18,6 +19,9 @@ function display(id) {
       break;
     case "projectsB":
       document.getElementsByClassName("projects")[0].style.display = "contents";
+      break;
+    case "contactB":
+      document.getElementsByClassName("contact")[0].style.display = "contents";
       break;
   }
 

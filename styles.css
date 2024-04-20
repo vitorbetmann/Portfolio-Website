@@ -15,7 +15,8 @@ footer,
 /* Starting configs */
 .resume,
 .projects,
-#socialsBottom,
+#contactB,
+.contact,
 .projects button img {
   display: none;
 }
@@ -139,7 +140,8 @@ th {
 
 /* Projects tab */
 .resume div,
-.projects div {
+.projects div,
+.contact table{
   display: flexbox;
   text-align: justify;
   justify-content: center;
@@ -171,13 +173,13 @@ iframe {
     display: none;
   }
 
-  main, #myPicture {
-    margin-top: 5vh;
+  main,
+  #myPicture {
+    margin-top: 10vh;
   }
 
   main {
     margin-bottom: 5vh;
-
   }
 
   .main {
@@ -185,22 +187,31 @@ iframe {
     margin-left: 0;
   }
 
-  footer {
+  /* footer {
     position: fixed;
     bottom: 0;
     padding: 1%;
     background-color: #c3c2c3;
-  }
+  } */
 
-  #socialsBottom {
+  #contactB {
     display: contents;
     margin: auto;
   }
 
-  button {
-    width: 25vw;
+
+
+
+  .contact img {
+    padding: 5vh;
+    width: 30vw;
     height: fit-content;
-    font-size: 3vw;
+  }
+
+  button {
+    width: 23vw;
+    height: 10vh;
+    font-size: 4vw;
   }
 
   #myDescription,
@@ -208,7 +219,7 @@ iframe {
   .projects,
   iframe,
   .projects table,
-  .main {
+  .contact table, .main {
     width: fit-content;
     margin: 0;
     font-size: 3vw;
@@ -219,6 +230,7 @@ iframe {
     width: fit-content;
     height: fit-content;
   }
+
   .projects button img {
     display: flex;
     margin: auto;
