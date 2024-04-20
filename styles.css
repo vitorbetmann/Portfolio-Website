@@ -15,9 +15,8 @@ footer,
 /* Starting configs */
 .resume,
 .projects,
-#contactB,
-.contact,
-.projects button img {
+.projects button img,
+.contact, #contactB {
   display: none;
 }
 
@@ -141,7 +140,7 @@ th {
 /* Projects tab */
 .resume div,
 .projects div,
-.contact table{
+.contact table {
   display: flexbox;
   text-align: justify;
   justify-content: center;
@@ -187,39 +186,29 @@ iframe {
     margin-left: 0;
   }
 
-  /* footer {
-    position: fixed;
-    bottom: 0;
-    padding: 1%;
-    background-color: #c3c2c3;
-  } */
-
-  #contactB {
-    display: contents;
-    margin: auto;
-  }
-
-
-
-
   .contact img {
     padding: 5vh;
     width: 30vw;
     height: fit-content;
   }
+  #buttonDiv button{
+    display: contents;
+    justify-content: space-between;
+  }
 
   button {
     width: 23vw;
-    height: 10vh;
+    height: fit-content;
     font-size: 4vw;
   }
 
   #myDescription,
   .resume,
   .projects,
+  .contac,
   iframe,
   .projects table,
-  .contact table, .main {
+  .main {
     width: fit-content;
     margin: 0;
     font-size: 3vw;
