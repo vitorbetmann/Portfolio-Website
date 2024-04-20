@@ -3,7 +3,6 @@ function display(id) {
   for (var i = 0; i < divObj.length; i++) {
     divObj[i].style.backgroundColor = "#c3c2c3";
     divObj[i].style.color = "black";
-
   }
 
   document.getElementsByClassName("about")[0].style.display = "none";
@@ -25,6 +24,7 @@ function display(id) {
   var buttonObj = document.getElementById(id).style;
   buttonObj.backgroundColor = "#868686";
   buttonObj.color = "white";
+  scroll(0, 0);
 }
 
 function show(value) {
