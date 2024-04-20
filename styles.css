@@ -16,7 +16,8 @@ footer,
 .resume,
 .projects,
 .projects button img,
-.contact, #contactB {
+.contact, #contactB,
+.tab {
   display: none;
 }
 
@@ -191,10 +192,11 @@ iframe {
     width: 30vw;
     height: fit-content;
   }
-  #buttonDiv button{
+  #buttonDiv button, #buttonDiv .tab{
     display: contents;
     justify-content: space-between;
   }
+
 
   button {
     width: 23vw;
