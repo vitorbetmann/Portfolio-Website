@@ -190,7 +190,7 @@ iframe {
   .contact img {
     padding: 5vh;
     width: 30vw;
-    height: fit-content;
+    height: auto;
   }
   #buttonDiv button, #buttonDiv .tab{
     display: contents;
@@ -232,5 +232,9 @@ iframe {
 
   #myPicture {
     width: 50vw;
+  }
+
+  footer{
+    font-size: 5vw;
   }
 }
