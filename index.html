@@ -12,20 +12,17 @@
   <body>
     <!--Header-->
     <header>
-      <span id="myName">
+      <div id="myName">
         <a href="index.html"><h1>VITOR BETMANN</h1></a>
-      </span>
-      <span>
-        <div id="buttonDiv">
-          <button id="resumeB" onclick="display('resumeB')">RESUME</button>
-          <button id="aboutB" onclick="display('aboutB')">ABOUT ME</button>
-          <button id="projectsB" onclick="display('projectsB')">
-            PROJECTS
-          </button>
-        </div></span
-      >
+      </div>
 
-      <span id="socials">
+      <div id="buttonDiv">
+        <button id="resumeB" onclick="display('resumeB')">RESUME</button>
+        <button id="aboutB" onclick="display('aboutB')">ABOUT ME</button>
+        <button id="projectsB" onclick="display('projectsB')">PROJECTS</button>
+      </div>
+
+      <div id="socialsTop">
         <a
           href="https://www.linkedin.com/in/vitor-betmann-90550a82/"
           target="_blank"
@@ -44,61 +41,67 @@
           <img src="images/emailIcon.png" />
         </a>
         <a href="tel:6476856258"><img src="images/phoneIcon.png" /></a>
-      </span>
+      </div>
     </header>
 
     <!--Main-->
-    <div class="main">
-      <div class="about">
-        <div>
-          <img
-            id="myPicture"
-            src="images/matchaBotPic.JPEG"
-            alt="Betmann's profile picture"
-          />
+    <main>
+      <div class="main">
+        <div class="about">
+          <div>
+            <img
+              id="myPicture"
+              src="images/matchaBotPic.JPEG"
+              alt="Betmann's profile picture"
+            />
+          </div>
+          <div id="paragraph">
+            <h2>Welcome to my Portfolio!</h2>
+            <p id="myDescription">
+              I'm a
+              <strong>York University Digital Media</strong> student with a
+              passion for <strong>Programming</strong> whose joy is coming up
+              with projects to experiment new techniques.
+            </p>
+          </div>
+          <div>
+            <h2>My background</h2>
+            <p></p>
+          </div>
+          <hr />
         </div>
-        <div id="paragraph">
-          <h2>Welcome to my Portfolio!</h2>
-          <p id="myDescription">
-            I'm a
-            <strong>York University Digital Media</strong> student with a
-            passion for <strong>Programming</strong> whose joy is coming up with
-            projects to experiment new techniques.
-          </p>
-        </div>
-      </div>
 
-      <div class="resume">
-        <a href="/pdfs/resume.pdf" download>
-          <button id="downloadResumeB">
-            <p>Download Resume</p>
-            <img src="images/downloadIcon.png" alt="Download icon" />
-          </button>
-        </a>
-        <table>
-          <tr>
-            <td class="topCol">
-              <tr>
-                <td>
-                  <h2>EDUCATION</h2>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>BA in CINEMA with MINOR in DIGITAL MEDIA</strong>
-                </td>
-              </tr>
-              <tr>
-                <td>York University <i>(2021 - 2025)</i></td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li>
-                      Specializing in game development and computer graphics
-                      (GPA: B)
-                    </li>
-                    <!-- <br />
+        <div class="resume">
+          <div>
+            <br />
+            <a href="/pdfs/resume.pdf">
+              <button download id="downloadResumeB">
+                <table>
+                  <tr>
+                    <td>
+                      <p>Download Resume</p>
+                    </td>
+                    <td>
+                      <img src="images/downloadIcon.png" alt="Download icon" />
+                    </td>
+                  </tr>
+                </table>
+              </button>
+            </a>
+          </div>
+          <div>
+            <div>
+              <h2>EDUCATION</h2>
+              <p>
+                <strong>BA in CINEMA with MINOR in DIGITAL MEDIA</strong
+                ><br />York University <i>(2021 - 2025)</i>
+              </p>
+              <ul>
+                <li>
+                  Specializing in game development and computer graphics (GPA:
+                  B)
+                </li>
+                <!-- <br />
 
                     <li>
                       Assistant-Lead at the Robot Sumo branch of the Robotics
@@ -106,184 +109,132 @@
                     </li>
                     <br /> -->
 
-                    <!-- <li>Member of the Rover Team Software Department.</li> -->
-                  </ul>
-                </td>
-              </tr>
+                <!-- <li>Member of the Rover Team Software Department.</li> -->
+              </ul>
+              <p>
+                <strong>BS in MECHANICAL ENGINEERING</strong><br />Fluminense
+                Federal University <i>(2017 - 2019)</i>
+              </p>
+              <ul>
+                <li>Completed 130 credits toward graduation (GPA: B+).</li>
+                <br />
+                <li>
+                  Interned at Mechanical Testing Lab assisting in CNC Machining
+                  processes.
+                </li>
+              </ul>
+            </div>
 
-              <tr>
-                <td><strong>BS in MECHANICAL ENGINEERING </strong></td>
-              </tr>
-              <tr>
-                <td>Fluminense Federal University <i>(2017 - 2019)</i></td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li>Completed 130 credits toward graduation (GPA: B+).</li>
-                    <br />
+            <hr />
 
-                    <li>
-                      Interned at Mechanical Testing Lab assisting in CNC
-                      Machining processes.
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </td>
-          </tr>
+            <div>
+              <h2>SKILLS</h2>
+              <table id="skillsTable">
+                <tr>
+                  <th class="oddCol">Programming Languages</th>
+                  <th>Tools & Frameworks</th>
+                  <th class="oddCol">Engines & Libraries</th>
+                  <th>Office Software</th>
+                  <th class="oddCol">Human Languages</th>
+                </tr>
+                <tr>
+                  <td class="oddCol">Java</td>
+                  <td>Git</td>
+                  <td class="oddCol">Pygame</td>
+                  <td>MS Suite</td>
+                  <td class="oddCol">English</td>
+                </tr>
+                <tr>
+                  <td class="oddCol">Python</td>
+                  <td>Github</td>
+                  <td class="oddCol"></td>
+                  <td>Google Suite</td>
+                  <td class="oddCol">Portuguese</td>
+                </tr>
+                <tr>
+                  <td class="oddCol">C++</td>
+                  <td></td>
+                  <td class="oddCol"></td>
+                  <td>Jira</td>
+                  <td class="oddCol"></td>
+                </tr>
+                <tr>
+                  <td class="oddCol">Javascript</td>
+                  <td></td>
+                  <td class="oddCol"></td>
+                  <td></td>
+                  <td class="oddCol"></td>
+                </tr>
+                <tr>
+                  <td class="oddCol">HTML</td>
+                  <td></td>
+                  <td class="oddCol"></td>
+                  <td></td>
+                  <td class="oddCol"></td>
+                </tr>
+                <tr>
+                  <td class="oddCol">CSS</td>
+                  <td></td>
+                  <td class="oddCol"></td>
+                  <td></td>
+                  <td class="oddCol"></td>
+                </tr>
+              </table>
+            </div>
 
-          <tr>
-            <td class="topCol">
-              <tr>
-                <td>
-                  <h2>SKILLS</h2>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <table id="skillsTable">
-                    <tr>
-                      <th>Programming Languages</th>
-                      <th>Tools & Frameworks</th>
-                      <th>Engines & Libraries</th>
-                      <th>Office Software</th>
-                      <th>Human Languages</th>
-                    </tr>
-                    <tr>
-                      <td>Java</td>
-                      <td>Git</td>
-                      <td>Pygame</td>
-                      <td>MS Suite</td>
-                      <td>English</td>
-                    </tr>
-                    <tr>
-                      <td>Python</td>
-                      <td>Github</td>
-                      <td></td>
-                      <td>Google Suite</td>
-                      <td>Portuguese</td>
-                    </tr>
-                    <tr>
-                      <td>C++</td>
-                      <td></td>
-                      <td></td>
-                      <td>Jira</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>Javascript</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>HTML</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>CSS</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </td>
-          </tr>
+            <hr />
 
-          <tr>
-            <td class="topCol">
-              <tr>
-                <td>
-                  <h2>WORK EXPERIENCE</h2>
-                </td>
-              </tr>
+            <div>
+              <h2>EDUCATION</h2>
+              <p>
+                <strong>PHYSICS TUTOR</strong><br />
+                Rio de Janeiro State University <i>(Aug 2014 - April 2015)</i>
+              </p>
+              <ul>
+                <li>
+                  Aided the students with any questions they had, and also
+                  lectured classes as a substitute teacher.
+                </li>
+                <br />
+                <li>
+                  Near the end of each term, I organized a study group that
+                  helped improve the students' grades in the finals.
+                </li>
+              </ul>
+            </div>
 
-              <tr>
-                <td><strong>PHYSICS TUTOR </strong></td>
-              </tr>
-              <tr>
-                <td>
-                  Rio de Janeiro State University <i>(Aug 2014 - April 2015)</i>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li>
-                      Aided the students with any questions they had, and also
-                      lectured classes as a substitute teacher.
-                    </li>
-                    <br />
+            <hr />
 
-                    <li>
-                      Near the end of each term, I organized a study group that
-                      helped improve the students' grades in the finals.
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </td>
-          </tr>
+            <div>
+              <h2>ACHIEVEMENTS</h2>
+              <h3>Mini Robot Sumo Competition</h3>
+              <ul>
+                <li><strong>1ST Place</strong> at York U, 2024</li>
+                <li><strong>1ST Place</strong> at McMaster University, 2024</li>
+              </ul>
+            </div>
 
-          <tr>
-            <td class="topCol">
-              <tr>
-                <td>
-                  <h2>ACHIEVEMENTS</h2>
-                </td>
-              </tr>
-              <tr>
-                <td><h3>Mini Robot Sumo Competition</h3></td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li><strong>1ST Place</strong> at York U, 2024</li>
-                    <li>
-                      <strong>1ST Place</strong> at McMaster University, 2024
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </td>
-          </tr>
+            <hr />
 
-          <tr>
-            <td class="topCol">
-              <tr>
-                <td>
-                  <h2>TRIVIA ABOUT ME</h2>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li>
-                      I was part of a theatre company for 2 years, where I
-                      co-wrote and acted in a play.
-                    </li>
-                    <li>
-                      I'm making a pocket card game inspired by my work as a
-                      barista.
-                    </li>
-                    <li>I go nowhere without a book or my Nintendo Switch</li>
-                  </ul>
-                </td>
-              </tr>
-            </td>
-          </tr>
-        </table>
-      </div>
+            <div>
+              <h2>TRIVIA ABOUT ME</h2>
+              <ul>
+                <li>
+                  I was part of a theatre company for 2 years, where I co-wrote
+                  and acted in a play.
+                </li>
+                <li>
+                  I'm making a pocket card game inspired by my work as a
+                  barista.
+                </li>
+                <li>I go nowhere without a book or my Nintendo Switch</li>
+              </ul>
+            </div>
+            <hr />
+          </div>
+        </div>
 
-      <div class="projects">
+        <div class="projects">
           <br />
           <form name="form1" id="form1" action="/action_page.php">
             Filter by
@@ -293,138 +244,157 @@
               <option value="robotics">Robotics</option>
             </select>
           </form>
-        <div class="robotics">
-          <h2 class="title">MatchaBot (C++/Arduino)</h2>
-          <h3 class="title">Sumo Fighting Robot</h3>
-          <iframe
-            src="https://www.youtube.com/embed/BBuaSTkzxIo?si=c1giAAfNKjiKvbtu"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <table>
-            <tr>
-              <td>
-                <ul>
-                  <li>
-                    In March 2024, my teammate modeled and I coded the robot
-                    that got
-                    <strong>1ST PLACE, by winning 15 out of 16 matches</strong>,
-                    at the annual York University Mini Robot Sumo Competition.
-                  </li>
-                  <br />
-                  <li>
-                    For this new version, we developed a strategy that evaded
-                    the opponent and attacked it from the side, ensuring victory
-                    100% of the times we enabled it.
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <a
-                  href="https://github.com/vitorbetmann/Arduino-TicTacToe"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  ><button>Repository</button></a
-                >
-              </td>
-            </tr>
-          </table>
+
+          <div class="robotics">
+            <h2 class="title">MatchaBot (C++/Arduino)</h2>
+            <h3 class="title">Sumo Fighting Robot</h3>
+            <iframe
+              src="https://www.youtube.com/embed/BBuaSTkzxIo?si=c1giAAfNKjiKvbtu"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <table>
+              <tr>
+                <td>
+                  <ul>
+                    <li>
+                      In March 2024, my teammate modeled and I coded the robot
+                      that got
+                      <strong>1ST PLACE, by winning 15 out of 16 matches</strong
+                      >, at the annual York University Mini Robot Sumo
+                      Competition.
+                    </li>
+                    <br />
+                    <li>
+                      For this new version, we developed a strategy that evaded
+                      the opponent and attacked it from the side, ensuring
+                      victory 100% of the times we enabled it.
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <a
+                    href="https://github.com/vitorbetmann/Arduino-TicTacToe"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    ><button>
+                      <p>Repository</p>
+                      <img
+                        src="images/githubLogo.png"
+                        alt="Github logo"
+                      /></button
+                  ></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <hr />
+
+          <div class="robotics">
+            <h2 class="title">EspressoBot (C++/Arduino)</h2>
+            <h3 class="title">Sumo Fighting Robot</h3>
+            <iframe
+              src="https://www.youtube.com/embed/dHQ6fCmV7Aw?si=VTiVoWHn6Rq0ToLU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <table>
+              <tr>
+                <td>
+                  <ul>
+                    <li>
+                      In January 2024, I modeled, assembled, and coded the robot
+                      that
+                      <strong>won 1ST PLACE out of 32 teams</strong> at the
+                      annual McMaster University Mini Robot Sumo Competition.
+                    </li>
+                    <br />
+                    <li>
+                      The robot had an ultrasonic sensor to find the opponent
+                      and a pair of infrared sensors to react when too close to
+                      the arena's edge.
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <a
+                    href="https://github.com/vitorbetmann/Arduino-TicTacToe"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    ><button>
+                      <p>Repository</p>
+                      <img
+                        src="images/githubLogo.png"
+                        alt="Github logo"
+                      /></button
+                  ></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <hr />
+
+          <div class="games">
+            <h2 class="title">TIC-TAC-TOE (C++/Arduino)</h2>
+            <iframe
+              src="https://www.youtube.com/embed/BBuaSTkzxIo?si=c1giAAfNKjiKvbtu"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <table>
+              <tr>
+                <td>
+                  <ul>
+                    <li>
+                      A game of Tic-Tac-Toe in which the player uses a standard
+                      IR control to make the plays against an
+                      <strong>AI opponent</strong>. It uses a 128x128p LCD
+                      display to show the board and another 16x2 LCD display to
+                      communicate with the player (ask for input, show the
+                      score...).
+                    </li>
+                    <br />
+                    <li>
+                      To resemble the experience of playing with a videogame
+                      controller, I mapped the 'forward,' 'rewind,' 'volume+,'
+                      and 'volume-' keys to behave like directional buttons,
+                      with the 'play/pause' button being used to confirm the
+                      play.
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <a
+                    href="https://github.com/vitorbetmann/Arduino-TicTacToe"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    ><button>
+                      <p>Repository</p>
+                      <img
+                        src="images/githubLogo.png"
+                        alt="Github logo"
+                      /></button
+                  ></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <hr />
         </div>
-
-        <hr />
-
-        <div class="robotics">
-          <h2 class="title">EspressoBot (C++/Arduino)</h2>
-          <h3 class="title">Sumo Fighting Robot</h3>
-          <iframe
-            src="https://www.youtube.com/embed/dHQ6fCmV7Aw?si=VTiVoWHn6Rq0ToLU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <table>
-            <tr>
-              <td>
-                <ul>
-                  <li>
-                    In January 2024, I modeled, assembled, and coded the robot
-                    that
-                    <strong>won 1ST PLACE out of 32 teams</strong> at the annual
-                    McMaster University Mini Robot Sumo Competition.
-                  </li>
-                  <br />
-                  <li>
-                    The robot had an ultrasonic sensor to find the opponent and
-                    a pair of infrared sensors to react when too close to the
-                    arena's edge.
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <a
-                  href="https://github.com/vitorbetmann/Arduino-TicTacToe"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  ><button>Repository</button></a
-                >
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <hr />
-
-        <div class="games">
-          <h2 class="title">TIC-TAC-TOE (C++/Arduino)</h2>
-          <iframe
-            src="https://www.youtube.com/embed/BBuaSTkzxIo?si=c1giAAfNKjiKvbtu"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <table>
-            <tr>
-              <td>
-                <ul>
-                  <li>
-                    A game of Tic-Tac-Toe in which the player uses a standard IR
-                    control to make the plays against an
-                    <strong>AI opponent</strong>. It uses a 128x128p LCD display
-                    to show the board and another 16x2 LCD display to
-                    communicate with the player (ask for input, show the
-                    score...).
-                  </li>
-                  <br />
-                  <li>
-                    To resemble the experience of playing with a videogame
-                    controller, I mapped the 'forward,' 'rewind,' 'volume+,' and
-                    'volume-' keys to behave like directional buttons, with the
-                    'play/pause' button being used to confirm the play.
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <a
-                  href="https://github.com/vitorbetmann/Arduino-TicTacToe"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  ><button>Repository</button></a
-                >
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <hr />
       </div>
-    </div>
+    </main>
 
     <!--Footer-->
     <footer>
@@ -433,9 +403,35 @@
         src="images/zombies in china.webp"
         alt="Reference to Plants vs Zombies"
       /> -->
-      <div>
-        <p>By Vitor Betmann, 2024</p>
-      </div>
+      <table>
+        <tr id="createdBy">
+          <td><p>By Vitor Betmann, 2024</p></td>
+        </tr>
+        <tr>
+          <td>
+            <div id="socialsBottom">
+              <a
+                href="https://www.linkedin.com/in/vitor-betmann-90550a82/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img src="images/linkedinLogo.png" alt="Linkedin logo" />
+              </a>
+              <a
+                href="https://github.com/vitorbetmann"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img src="images/githubLogo.png" alt="Github logo" />
+              </a>
+              <a href="mailto:" target="_blank" rel="noreferrer noopener">
+                <img src="images/emailIcon.png" />
+              </a>
+              <a href="tel:6476856258"><img src="images/phoneIcon.png" /></a>
+            </div>
+          </td>
+        </tr>
+      </table>
     </footer>
   </body>
 </html>
