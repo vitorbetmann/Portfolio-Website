@@ -221,7 +221,7 @@ iframe {
     height: fit-content;
   }
 
-  .projects button img {
+  .projects button img, .contact button img {
     display: flex;
     margin: auto;
   }
