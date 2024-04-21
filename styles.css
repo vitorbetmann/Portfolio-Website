@@ -140,8 +140,9 @@ th {
 
 /* Projects tab */
 .resume div,
-.projects div,
-.contact table {
+.projects div
+/*, .contact table */
+{ 
   display: flexbox;
   text-align: justify;
   justify-content: center;
@@ -221,8 +222,8 @@ iframe {
     height: fit-content;
   }
 
-  .projects button img, .contact button img {
-    display: flex;
+  .projects button img {
+    /* display: flex; */
     margin: auto;
   }
 
